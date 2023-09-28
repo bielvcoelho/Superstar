@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superstar | Cadastrar-se</title>
+
+    <link rel="icon" type="image/png" href="../Imagens/Logo Superstar nova sem fundo.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function validacao_campos() {
+            var nome = cadastros.nome_usuario.value;
+            var sobrenome = cadastros.sobrenome_usuario.value;
+            var email = cadastros.email_usuario.value;
+            var senha = cadastros.senha_usuario.value;
+            var senha2 = cadastros.senha2_usuario.value;
+            var data = cadastros.data_nascimento_usuario.value;
+
+            if (nome == "") {
+                alert("Preenchimento do nome obrigatório");
+                cadastros.nome_usuario.focus();
+                return false;
+            }
+
+            if (sobrenome == "") {
+                alert("Preenchimento de sobrenome obrigatório");
+                cadastros.sobrenome_usuario.focus();
+                return false;
+            }
+
+            if (email == "" || email.indexOf('@') == -1) {
+                alert("Preenchimento do email obrigatório com um email válido");
+                cadastros.email_usuario.focus();
+                return false;
+            }
+
+            if (senha == "" || senha.length <= 5) {
+                alert("Preenchimento de senha é obrigatório com no mínimo 6 caracteres");
+                cadastros.senha_usuario.focus();
+                return false;
+            }
+
+            if (senha != senha2) {
+                alert("Senhas incompativeis");
+                cadastros.senha2_usuario.focus();
+                return false;
+            }
+
+            if (data == "") {
+                alert("Data de nascimento necessária");
+                cadastros.data_nascimento_usuario.focus();
+                return false;
+            }
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="../Css/Superstarfinal.css">
+
+</head>
+
+<body>
+
+    <a href="../Html/Index.html">
+        <img src="../Imagens/Cabeçalho com logo 2.jpg" width="100%">
+    </a>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-xl-none" style="background-color: black;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: goldenrod;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active Inicio">
+                    <a class="nav-link" href="../Html/Index.html" style="color:gold; font-size: 25px;">Inicio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item Filmes">
+                    <a class="nav-link" href="../Html/Filmes.html" style="color:gold; font-size: 25px;">Filmes</a>
+                </li>
+                <li class="nav-item Series">
+                    <a class="nav-link" href="../Html/Series.html" style="color:gold; font-size: 25px;">Séries</a>
+                </li>
+                <li class="nav-item Trailers">
+                    <a class="nav-link" href="../Html/Trailers.html" style="color:gold; font-size: 25px;">Trailers</a>
+                </li>
+                <li class="nav-item Entrar">
+                    <a class="nav-link" href="../Html/Entrar.html" style="color:gold; font-size: 25px;">Entrar</a>
+                </li>
+                <li class="nav-item Cadastrar">
+                    <a class="nav-link" href="../Html/Cadastrar-se.html" style="color:gold; font-size: 25px;">Cadastrar-se</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-none d-xl-block">
+        <div class="row  " style="background-color: black;" align="center" id="menu">
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Index.html">
+                    <button class="barra">Inicio</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Filmes.html">
+                    <button class="barra">Filmes</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Series.html">
+                    <button class="barra">Séries</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Trailers.html">
+                    <button class="barra">Trailers</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Entrar.html">
+                    <button class="barra">Entrar</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Cadastrar-se.html">
+                    <button class="barra">Cadastrar-se</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <br>
+        <h1 style="color: gold" align="center">Cadastre-se</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form id="cadastros" method="POST" align="center">
+            <h2 style="color: gold">Nome:</h2>
+            <br>
+            <input type="text" name="nome_usuario" placeholder="Digite Aqui:" class="campos">
+            <br>
+            <br>
+            <br>
+            <h2 style="color: gold">Sobrenome:</h2>
+            <br>
+            <input type="text" name="sobrenome_usuario" placeholder="Digite Aqui:" class="campos">
+            <br>
+            <br>
+            <br>
+            <h2 style="color: gold">Email:</h2>
+            <br>
+            <input type="email" name="email_usuario" placeholder="Digite Aqui:" class="campos">
+            <br>
+            <br>
+            <br>
+            <h2 style="color: gold">Senha:</h2>
+            <br>
+            <input type="password" name="senha_usuario" placeholder="Digite Aqui:" class="campos">
+            <br>
+            <br>
+            <br>
+            <h2 style="color: gold">Confirme a sua senha:</h2>
+            <br>
+            <input type="password" name="senha2_usuario" placeholder="Digite Aqui:" class="campos">
+            <br>
+            <br>
+            <br>
+            <h2 style="color: gold">Data de Nascimento:</h2>
+            <br>
+            <input type="date" name="data_nascimento_usuario" class="campos">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" onclick="return validacao_campos()" value="Cadastrar-se" class="botao">
+            <br>
+            <br>
+        </form>
+
+
+
+
+
+
+        <br>
+
+    </div>
+</body>
+
+</html>

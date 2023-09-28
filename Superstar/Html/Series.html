@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superstar | Séries</title>
+
+    <link rel="icon" type="image/png" href="../Imagens/Logo Superstar nova sem fundo.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Css/Superstarfinal.css">
+
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+</head>
+
+<body>
+
+    <a href="../Html/Index.html">
+        <img src="../Imagens/Cabeçalho com logo 2.jpg" width="100%">
+    </a>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light d-xl-none" style="background-color: black;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: goldenrod;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active Inicio">
+                    <a class="nav-link" href="../Html/Index.html" style="color:gold; font-size: 25px;">Inicio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item Filmes">
+                    <a class="nav-link" href="../Html/Filmes.html" style="color:gold; font-size: 25px;">Filmes</a>
+                </li>
+                <li class="nav-item Series">
+                    <a class="nav-link" href="../Html/Series.html" style="color:gold; font-size: 25px;">Séries</a>
+                </li>
+                <li class="nav-item Trailers">
+                    <a class="nav-link" href="../Html/Trailers.html" style="color:gold; font-size: 25px;">Trailers</a>
+                </li>
+                <li class="nav-item Entrar">
+                    <a class="nav-link" href="../Html/Entrar.html" style="color:gold; font-size: 25px;">Entrar</a>
+                </li>
+                <li class="nav-item Cadastrar">
+                    <a class="nav-link" href="../Html/Cadastrar-se.html" style="color:gold; font-size: 25px;">Cadastrar-se</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-none d-xl-block">
+        <div class="row  " style="background-color: black;" align="center" id="menu">
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Index.html">
+                    <button class="barra">Inicio</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Filmes.html">
+                    <button class="barra">Filmes</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Series.html">
+                    <button class="barra">Séries</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Trailers.html">
+                    <button class="barra">Trailers</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Entrar.html">
+                    <button class="barra">Entrar</button>
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a href="../Html/Cadastrar-se.html">
+                    <button class="barra">Cadastrar-se</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    </nav>
+    <div class="container-fluid">
+        <br>
+        <br>
+        <h1 style="color: gold; font-size:50px;" align="center">Séries</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- <div class="card-deck" style="color: #CC2020;" align="center">
+            <div class="card" style="background-image: linear-gradient(45deg, #0D0D0D, #0D0D0D);;">
+                <h1 style="color: gold" align="center">Game of Thrones</h1>
+                <br>
+                <img src="../Imagens/Got.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <br>
+                        2011 - 2019 / 52min / Drama, Fantasia<br>
+                        <br>
+                        Sinopse: Nove famílias da nobreza lutam pelo
+                        controle dos territórios de Westeros, um lugar
+                        onde os verões podem durar vários anos e
+                        o inverno, a vida inteira. Enquanto isso,
+                        um antigo inimigo retorna para ameaçá-los.
+
+                    </h6>
+                </div>
+            </div>
+            <div class="card" style="background-image: linear-gradient(45deg, #0D0D0D, #0D0D0D);;">
+                <h1 style="color: gold" align="center">The Vampire Diares</h1>
+                <br>
+                <img src="../Imagens/Vampire diares.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <br>
+                        2009 - 2017 / 42min / Drama, Fantasia, Romance<br>
+                        <br>
+                        Sinopse: A cidade fictícia de Mystic Falls,
+                        na Virgina, é assombrada por criaturas sobrenaturais.
+                        Damon e Stefan Salvatore são irmãos que
+                        ganharam a condição de vampiro.
+
+                    </h6>
+                </div>
+            </div>
+            <div class="card" style="background-image: linear-gradient(45deg, #0D0D0D, #0D0D0D);;">
+                <h1 style="color: gold" align="center">Peaky Blinders</h1>
+                <br>
+                <img src="../Imagens/peaky blinders.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <br>
+                        Desde 2013 / 52min / Policial, Drama, Histórico<br>
+                        <br>
+                        Sinopse: Um gângster familiar ambientado em
+                        Birmingham, na Inglaterra, em 1919. A série é
+                        centrada numa gangue de criminosos e seu
+                        implacável líder, Thomas Shelby.
+
+                    </h6>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row" align="center" style="color: white;">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <h2 style="color: gold" align="center">
+                    <br>Game of Thrones</h2>
+                <br>
+                <a data-toggle="modal" data-target="#exampleModal4" href="">
+                    <img src="../Imagens/Got.jpg" width="80%" class="foto">
+                </a>
+                <h6>
+                    <br>
+                    <br> 2011 - 2019 / 52min / Drama, Fantasia
+                    <br>
+                    <br> Sinopse: Nove famílias da nobreza lutam pelo controle de Westeros, um lugar onde os verões podem durar
+                    vários anos e o inverno, a vida inteira.
+                </h6>
+                <br>
+                <br>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h2 style="color: gold" align="center">The Vampire
+                    <br> Diares</h2>
+                <br>
+                <a data-toggle="modal" data-target="#exampleModal5" href="">
+                    <img src="../Imagens/Vampire diares.jpg" width="80%" class="foto">
+                </a>
+                <h6>
+                    <br>
+                    <br> 2009 - 2017 / 42min / Drama, Fantasia, Romance
+                    <br>
+                    <br> Sinopse: A cidade fictícia de Mystic Falls, na Virgina, é assombrada por criaturas sobrenaturais. Damon
+                    e Stefan Salvatore são irmãos que ganharam a condição de vampiro.
+
+
+                </h6>
+                <br>
+                <br>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h2 style="color: gold" align="center">
+                    <br>Peaky Blinders</h2>
+                <br>
+                <a data-toggle="modal" data-target="#exampleModal6" href="">
+                    <img src="../Imagens/peaky blinders.jpg" width="80%" class="foto">
+                </a>
+                <h6>
+                    <br>
+                    <br> Desde 2013 / 52min / Policial, Drama, Histórico
+                    <br>
+                    <br> Sinopse: Um gângster familiar ambientado em Birmingham, na Inglaterra, em 1919. A série é centrada numa
+                    gangue de criminosos e seu implacável líder, Thomas Shelby.
+                </h6>
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <br>
+
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content caixa">
+                    <div class="modal-header caixa">
+                        <h2 style="color: gold">Game of Thrones</h2>
+                        <!-- <h5 class="modal-title" id="exampleModalLabel"> Godzilla vs Kong</h5> -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: gold">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- <div class="modal-body">
+                                    <p>teste</p>
+                                    
+                                    </div> -->
+                    <br>
+                    <img src="../Imagens/Got modal.jpg">
+                    <br>
+                    <br>
+                    <h6>
+                        2011 - 2019 / 52min / Drama, Fantasia
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Criado por:</h6> D.B. Weiss, David Benioff
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Elenco:</h6> Emilia Clarke, Peter Dinklage, Kit Harington
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Temporadas:</h6> 8
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Episódios:</h6> 73
+                        <br>
+                        <br>
+                    </h6>
+
+                    <h6>
+                        <h5 style="color: gold">SINOPSE:</h5>
+
+                        Game of Thrones conta a históra de um lugar onde uma força destruiu o equilíbrio das estações, há muito tempo. Em uma terra
+                        onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais
+                        correm as portas do Reino dos Sete Reinos. A irmandade da Patrulha da Noite busca proteger o reino
+                        de cada criatura que pode vir de lá da Muralha, mas já não tem os recursos necessários para garantir
+                        a segurança de todos. Depois de um verão de dez anos, um inverno rigoroso promete chegar com um futuro
+                        mais sombrio. Enquanto isso, conspirações e rivalidades correm no jogo político pela disputa do Trono
+                        de Ferro, o símbolo do poder absoluto.
+                    </h6>
+                    <br>
+                    <br>
+                    <br>
+                    <form id="avaliacao" method="POST">
+                        <h4 align="center">Avalie:</h4>
+                        <textarea name="avalie" rows="3" cols="50" maxlength="200" placeholder="Oque achou deste filme?" align="center"></textarea>
+                    </form>
+                    <div class="modal-footer caixa">
+                        <button type="button" class="btn btn-secondary buton" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary buton">Avaliar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content caixa">
+                    <div class="modal-header caixa">
+                        <h2 style="color: gold">The Vampire Diares</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: gold">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <br>
+                    <img src="../Imagens/Vampire diares modal.jfif">
+                    <br>
+                    <br>
+                    <h6>
+                        2009 - 2017 / 42min / Drama, Fantasia, Romance
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Criado por:</h6> Julie Plec, Kevin Williamson
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Elenco:</h6> Nina Dobrev, Paul Wesley, Ian Somerhalder
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Temporadas:</h6> 8
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Episódios:</h6> 171
+                        <br>
+                        <br>
+                    </h6>
+
+                    <h6>
+                        <h5 style="color: gold">SINOPSE:</h5>
+
+                        A cidade fictícia de Mystic Falls, na Virgina, é assombrada por criaturas sobrenaturais. Damon (Ian Somerhalder) e Stefan
+                        Salvatore (Paul Wesley) são irmãos que ganharam a condição de vampiro e desde então procuram manter
+                        sua imortalidade em segredo. Ao mesmo tempo, buscam resistir à vontade de atacar seres humanos. Ambos
+                        conhecem Elena Gilbert (Nina Dobrev), uma linda e popular estudante, e logo se atraem por ela. No
+                        entanto, a jovem corresponde apenas um dos interessados, e estes iniciam uma disputa por sua alma.
+                    </h6>
+                    <br>
+                    <br>
+                    <br>
+                    <form id="avaliacao" method="POST">
+                        <h4 align="center">Avalie:</h4>
+                        <textarea name="avalie" rows="3" cols="50" maxlength="200" placeholder="Oque achou deste filme?" align="center"></textarea>
+                    </form>
+                    <div class="modal-footer caixa">
+                        <button type="button" class="btn btn-secondary buton" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary buton">Avaliar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content caixa">
+                    <div class="modal-header caixa">
+                        <h2 style="color: gold">Peaky Blinders</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: gold">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <br>
+                    <img src="../Imagens/Peaky Blinders modal.jfif">
+                    <br>
+                    <br>
+                    <h6>
+                        Desde 2013 / 52min / Drama, Histórico, Policial
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Criado por:</h6> Steven Knight
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Elenco:</h6> Cillian Murphy, Helen McCrory, Paul Anderson
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Temporadas:</h6> 5
+                        <br>
+                        <br>
+                        <h6 style="color: gold">Episódios:</h6> 30
+                        <br>
+                        <br>
+                    </h6>
+
+                    <h6>
+                        <h5 style="color: gold">SINOPSE:</h5>
+                        Em Peaky Blinders, Thomas Shelby (Cillian Murphy) e seus irmãos retornam a Birmingham depois de servir no exército britânico
+                        durante a Primeira Guerra Mundial. Shelby e os Peaky Blinders, a gangue de criminosos da qual ele
+                        é líder, controlam a cidade com mãos de ferro, construindo um império que vai desde corridas de cavalo
+                        adulteradas e roubo de carregamentos até parcerias secretas com os russos. Mas as ambições de Shelby
+                        se estendem para além de Birmingham, e ele não vai deixar que ninguém atrapalhe seus planos de se
+                        tornar um dos homens mais poderosos do Reino Unido. À medida que sua família se destaca nos negócios,
+                        novas alianças se formam, bem como novas e perigosas rivalidades. Ao mesmo tempo que vive as transformações
+                        políticas, econômicas e sociais do início do século 20, Shelby precisa lidar com os traumas de seu
+                        próprio passado - que parecem atormentá-lo diariamente.
+                    </h6>
+                    <br>
+                    <br>
+                    <br>
+                    <form id="avaliacao" method="POST">
+                        <h4 align="center">Avalie:</h4>
+                        <textarea name="avalie" rows="3" cols="50" maxlength="200" placeholder="Oque achou deste filme?" align="center"></textarea>
+                    </form>
+                    <div class="modal-footer caixa">
+                        <button type="button" class="btn btn-secondary buton" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary buton">Avaliar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
